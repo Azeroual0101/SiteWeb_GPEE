@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événement Spécial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "I78DEPTkk2DWDmAjo",
+        });
+    })();
+</script>
+</head>
+<body>
+    <!-- Header avec Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="ÉvènementExpress Logo">
+                </div>
+                <ul class="nav-links" style=" color: rgb(6, 72, 27);">
+                    <li><a href="index.html">Accueil</a></li>
+
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+ 
+<!-- Section Contact -->
+<section id="contact">
+    <div class="container">
+        <h2 class="fade-in">Contactez-nous</h2>
+        <div class="contact-wrapper">
+                        <!-- Réseaux sociaux en bas -->
+                        <div class="contact-social fade-in">
+                            <div class="social-icons">
+
+                                <a href="https://www.instagram.com/jenr.ensak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/jenrensakh/" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://wa.me/qr/Q527DS6A32GTL1" class="social-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+
+
+                            </div>
+            
+                        </div>
+            <!-- Formulaire en haut -->
+             
+            <form class="contact-form fade-in">
+                <div class="form-row">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" class="form-control" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea id="message" class="form-control" placeholder="Votre message" rows="5" required></textarea>
+                </div>
+                <div class="form-btn-container" style="text-align: center;">
+                    <button type="submit" onclick="sendMail()" class="btn" style="margin: 0 auto;">Envoyer</button>
+                </div>
+            </form>
+            
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="email.js"></script>
+</body>
+</html>

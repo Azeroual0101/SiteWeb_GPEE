@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événement Spécial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "I78DEPTkk2DWDmAjo",
+        });
+    })();
+</script>
+</head>
+<body>
+    <!-- Header avec Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="ÉvènementExpress Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#departement">Département</a></li>
+                    <li><a href="#equipe">Équipe</a></li>
+                    <li><a href="#Forum">Forum</a></li>
+                    <li><a href="#competition">Compétition</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="container">
+            <h2 class="fade-in" style="color: white;">11ᵉ édition des Journées des Énergies Renouvelables</h2>
+            <p class="fade-in">
+                <strong>Gestion intégrée des ressources en 
+                    <span style="color: #00ccff;">eau</span> et 
+                    <span style="color: #00ff08;">énergie</span>
+                </strong>
+            </p>
+            
+            <br><br>
+            
+            <div class="info-items-container">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>14-15 Avril 2025</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                        <a href="https://maps.app.goo.gl/bSLzE4PPVQkFgUMP8" target="_blank" style="color: inherit; text-decoration: none;">
+                            Ensa Khouribga
+                        </a>
+                    </span>
+                </div>
+                
+            </div>
+            <br><br>
+            <a href="#a-propos" class="btn fade-in">En savoir plus</a>
+        </div>
+    </section>
+        
+    </section>
+<!-- Section À Propos -->
+<section id="a-propos">
+    <div class="container">
+        <h2 class="fade-in">À propos de l'événement</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <p>La 11ᵉ édition des <strong>Journées des Énergies Renouvelables (JEnR)</strong> se tiendra les <strong>14 et 15 avril 2025</strong> à l'ENSA Khouribga. Organisé par le Département de Génie des Procédés, de l’Énergie et de l’Environnement, cet événement aborde la <strong>gestion intégrée des ressources en eau et en énergie</strong> dans un contexte de changement climatique et de raréfaction des ressources.</p>
+                <p>Sous la vision de Sa Majesté le Roi Mohammed VI, le Maroc met en œuvre une stratégie coordonnée pour optimiser ses ressources, assurer l'approvisionnement en eau potable, soutenir l'irrigation et favoriser la décarbonation du secteur énergétique. Cet événement est une plateforme d’échange entre étudiants, chercheurs et professionnels, visant à développer des <strong>solutions innovantes</strong> adaptées aux défis locaux.</p>
+                <p>Au programme : conférences ,tables rondes, ateliers pratiques, compétitions et surprises, avec un accent sur les <strong>énergies renouvelables</strong> et les <strong>avancées technologiques</strong> pour construire un avenir <strong>durable</strong> et <strong>résilient</strong> pour le Maroc et au-delà.</p>
+            </div>
+            
+            
+            
+            
+            <div class="about-video fade-in">
+                <video autoplay loop muted playsinline>
+                    <source src="vidEvnet/vedioAcceuil.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 20px 0;">
+            <br>
+            <i id="scroll-arrow" class="fas fa-arrow-down" style="font-size: 2em; color: #318c58;"></i>
+        </div>
+        <!-- Conteneur carrousel + historique -->
+        <div class="carousel-history">
+            <!-- Carrousel -->
+            <div class="carousel-container fade-in">
+                <br><br>
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <img src="imagesEvents/IMG_0213.JPG" alt="Image événement 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagesEvents/IMG_0349.JPG" alt="Image événement 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagesEvents/IMG_0532.JPG" alt="Image événement 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagesEvents/IMG_0613.JPG" alt="Image événement 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagesEvents/IMG_0673.JPG" alt="Image événement 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagesEvents/IMG_0686.JPG" alt="Image événement 5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historique des éditions -->
+            <div class="history-timeline fade-in">
+                <div class="timeline-item">
+                    <!-- Icône d'usine pour l'efficacité énergétique en industries -->
+                    <div class="timeline-icon">🏭</div> 
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <p><strong>Efficacité énergétique en industries</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <!-- Icône de maison écologique pour la construction durable -->
+                    <div class="timeline-icon">🏡</div>
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p><strong>Construction durable</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <!-- Icône de recyclage pour le recyclage économique -->
+                    <div class="timeline-icon">♻️</div>
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <p><strong>Recyclage, levier économique</strong></p>
+                    </div>
+                </div>
+                <!-- Points de suspension pour d'autres éditions -->
+                <pre style="text-align: center;"><strong>...</strong></pre>
+                <br>
+                <div class="timeline-item">
+                    <!-- Icône de goutte d'eau pour l'approvisionnement en eau sécurisé -->
+                    <div class="timeline-icon">💧</div>
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p><strong>Approvisionnement en eau sécurisé</strong></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <!-- Icône de graphique énergétique pour l'optimisation de l'eau et de l'énergie -->
+                    <div class="timeline-icon">📊</div>
+                    <div class="timeline-content">
+                        <h3>2025</h3>
+                        <p><strong>Optimiser l'eau et l'énergie, ensemble !</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="departement" class="section-padding">
+    <div class="container">
+        <h2 class="section-title fade-in">À propos du département</h2>
+        <div class="department-content fade-in">
+            <div class="department-flex">
+                <div class="department-description">
+                    <p><i class="fas fa-flask"></i> Notre département de procédés et des énergies se distingue par son engagement envers l'innovation et l'excellence technique. Nous explorons et optimisons les procédés industriels et énergétiques afin de relever les défis de la transition écologique.</p>
+                    <p><i class="fas fa-cogs"></i> Grâce à une expertise pointue dans la transformation des ressources et l'optimisation des systèmes énergétiques, nous proposons des formations et des projets de recherche novateurs, adaptés aux enjeux actuels de l'industrie et de l'environnement.</p>
+                    <p><i class="fas fa-bolt"></i> Notre mission est de former des ingénieurs et chercheurs compétents, capables de concevoir des solutions durables et performantes, tout en favorisant des partenariats stratégiques entre le milieu académique et industriel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Section Forum -->
+<section id="Forum">
+    <div class="container">
+        <h2 class="fade-in">Notre Forum</h2>
+        <div class="forum-content">
+            <div class="forum-slideshow fade-in">
+                <div class="forum-slides">
+
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum1.JPG" alt="Image forum 2">
+                    </div>
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum2.JPG" alt="Image forum 2">
+                    </div>
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum3.JPG" alt="Image forum 3">
+                    </div>
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum4.JPG" alt="Image forum 4">
+                    </div>
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum5.JPG" alt="Image forum 5">
+                    </div>
+                    <div class="forum-slide">
+                        <img src="imagesForum/Forum6.JPG" alt="Image forum 5">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="forum-description fade-in">
+                <p>Bienvenue sur le Forum Officiel des Journées des Énergies Renouvelables (JEnR)</p>
+                <p>🌱 Rejoignez un espace d'échange dédié à l'énergie, à l'environnement et à l'innovation technologique. Partagez vos idées, posez vos questions et explorez des solutions avec une communauté engagée.</p>
+                <p>💡 Élargissez votre réseau, accédez à des informations exclusives et participez à des discussions qui façonnent l'avenir des ressources naturelles.</p>
+                <h4>Pourquoi participer ?</h4>
+                <p><i class="fas fa-comments"></i> Échangez sur les dernières avancées des énergies renouvelables.</p>
+                <p><i class="fas fa-chalkboard-teacher"></i> Assistez à des conférences, des ateliers et des tables rondes.</p>
+                <p><i class="fas fa-handshake"></i> Rencontrez des experts, des chercheurs et des étudiants motivés.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Section Compétition -->
+    <section id="competition">
+
+        <div class="container">
+            <h2 class="fade-in">La Compétition</h2>
+
+            <div class="competition-content">
+                <div class="competition-carousel">
+                    <div class="competition-poster" style="margin-left: 100px;">
+                        <img src="imagesComp/afficheComp1.jpg" alt="Affiche de la compétition 1" class="active" style="width: 100%; max-width: 300px;">
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsIFD2WaNAm75gMBE0_lCDD8gVH1S_R8FFwTpNVtAJTz8QXA/viewform" class="btn" style="font-size: 1em; padding: 5px; display: flex; justify-content: center; align-items: center; width: 150px; margin: 0px auto 0px 200px;">Inscrivez-vous</a>
+                
+                </div>
+                <div class="competition-promo">
+                    <br>
+                    <p class="promo-heading">🌱💡 Rejoignez <strong>Green Tech 11.0 </strong>et faites la différence ! 💡🌱</p>
+                    <p class="promo-subtitle">Vous avez une idée innovante pour un avenir plus vert ? C'est le moment de la concrétiser ! 🌍✨</p>
+                    <p class="promo-subtitle">Ne manquez pas cette occasion de contribuer à un monde meilleur !<br> 💪♻ Inscrivez-vous et partagez avec votre réseau !
+                    </p>
+                    
+                    
+                    <br>
+                    <div class="participation-reasons">
+                        <h3 class="reasons-title">🚀 <strong>Pourquoi participer ?</strong></h3>
+
+                            <pre>🔹 Transformez votre idée en un projet concret et impactant</pre>
+                            <pre>🔹 Bénéficiez de l'accompagnement d'experts et développez vos compétences</pre>
+                            <pre>🔹 Gagnez en visibilité et en reconnaissance dans le secteur des énergies renouvelables</pre>
+                            <pre>🔹 Accédez à des opportunités uniques et boostez votre visibilité</pre>
+                        <br>
+                        <h3 class="info-cta">
+                            <a href="ContactezNous.html" class="modern-link" style="color: #318c58;">
+                                Plus d'informations cliquez ici 
+                                
+                            </a>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="fade-in">Contactez-nous</h2>
+            
+            <!-- Message attractif ajouté -->
+            <div class="contact-message fade-in">
+                <p>Vous avez des questions ou souhaitez collaborer avec nous ? Notre équipe est à votre écoute !</p>
+                <p class="cta-text">Rejoignez la communauté JENR ENSAK et participez à façonner l'avenir de l'ingénierie durable.</p>
+            </div>
+                
+                <!-- Réseaux sociaux -->
+                <div class="contact-social fade-in">
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/jenr.ensak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/jenrensakh/" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<section id="sponsors">
+    <div class="container">
+        <h2 class="section-title fade-in">Nos Partenaires</h2>
+        <p class="section-description fade-in" style="text-align: center;"><strong>Ils soutiennent notre vision et nous permettent d'avancer</strong></p>
+        
+        <div class="sponsors-carousel fade-in">
+            <div class="sponsors-track">
+                <!-- Premier groupe de sponsors -->
+                <div class="sponsor-item">
+                    <img src="imagesSponso/1.png" alt="Sponsor 1">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/2.png" alt="Sponsor 2">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/3.png" alt="Sponsor 3">
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/4.png" alt="Sponsor 4">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/5.png" alt="Sponsor 5">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/6.png" alt="Sponsor 6">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/7.png" alt="Sponsor 7">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/8.png" alt="Sponsor 8">
+                    <div class="sponsor-overlay">
+                        
+                    </div>
+                </div>
+                <div class="sponsor-item">
+                    <img src="imagesSponso/9.png" alt="Sponsor 8">
+
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="sponsor-cta fade-in">
+            <div class="cta-content">
+            <h3><strong>Devenez Partenaire de Notre Événement</strong></h3>
+            <p><strong>Rejoignez nos prestigieux sponsors et bénéficiez d'une visibilité exceptionnelle auprès de notre public cible.</strong></p>
+            <a href="Dossier de sponso JEnR 11.0.pdf" class="btn cta-button" download>Télécharger le dossier de sponsoring</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><strong>JEnR</strong></h3>
+                    <p><strong>Optimiser l'eau et l'énergie, ensemble !</strong></p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#departement">Département</a></li>
+                        <li><a href="#equipe">Équipe</a></li>
+                        <li><a href="#competition">Compétition</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> jenrensakhouribga@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bd Beni Amir, Beni Amir ,Khouribga 25000</p>
+                </div>
+                
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JEnR. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="email.js"></script>
+</body>
+</html>
