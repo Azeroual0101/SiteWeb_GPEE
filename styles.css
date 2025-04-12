@@ -82,6 +82,7 @@ nav {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
+  color: green; /* Met en vert */
 }
 @media (max-width: 768px) {
   .hamburger {
@@ -662,11 +663,7 @@ p {
 
 /* Responsive Mobile */
 @media screen and (max-width: 768px) {
-  .competition-content {
-    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-    gap: 1rem;
-    padding: 0 15px;
-  }
+
 
   .competition-carousel {
     height: 300px; /* Hauteur réduite pour mobile */
@@ -788,18 +785,9 @@ p {
   margin-bottom: 1rem;
 }
 
-.contact-message .cta-text {
-  font-size: 1.4rem;
+.contact-message p strong {
   font-weight: 600;
-  color: var(--primary-color);
 }
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
 
 /* Réseaux sociaux */
 .contact-social {
@@ -807,17 +795,17 @@ p {
   margin-top: 2rem;
 }
 
-.contact-social h3 {
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Space between icons and text */
+  margin-bottom: 2rem;
 }
 
 .social-icons {
   display: flex;
-  justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .social-icon {
@@ -840,6 +828,17 @@ p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.social-motivation {
+  max-width: 400px;
+}
+
+.social-motivation p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Animation */
 .fade-in {
   opacity: 0;
@@ -854,66 +853,99 @@ p {
   }
 }
 
-/* Responsive design */
-@media (min-width: 768px) {
-  .contact-wrapper {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  
-  .contact-form {
-    flex: 1;
-  }
-  
-  .contact-social {
-    flex: 1;
-    margin-top: 0;
-  }
-}
-
-/* Animation */
-.fade-in {
-  animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-    gap: 0;
+  #contact {
+    padding: 2rem 0;
+    min-height: auto;
   }
-  
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
+
+  #contact .container {
+    padding: 0 1rem;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  #contact h2::after {
+    width: 80px;
+    height: 2px;
+  }
+
+  .contact-message {
+    margin-bottom: 2rem;
+  }
+
+  .contact-message p {
+    font-size: 1rem;
+  }
+
+  .contact-social {
+    margin-top: 1.5rem;
+  }
+
+  .social-container {
+    flex-direction: column; /* Stack icons and text on mobile */
+    gap: 1.5rem;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .social-motivation p {
+    font-size: 0.95rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
+  #contact {
+    padding: 1.5rem 0;
+  }
+
   #contact h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
   }
-  
-  .contact-form {
-    padding: 1.5rem;
+
+  #contact h2::after {
+    width: 60px;
+    height: 2px;
   }
-  
-  .social-icons {
-    gap: 1rem;
+
+  .contact-message {
+    margin-bottom: 1.5rem;
   }
-  
+
+  .contact-message p {
+    font-size: 0.9rem;
+  }
+
+  .contact-social {
+    margin-top: 1rem;
+  }
+
   .social-icon {
     width: 40px;
     height: 40px;
     font-size: 16px;
   }
-}
 
+  .social-motivation p {
+    font-size: 0.9rem;
+  }
+}
 
 /* Sponsors Section */
 .sponsors-carousel {
@@ -1363,4 +1395,98 @@ footer {
     justify-content: center;
     align-items: center;
   }
+}
+
+/* der et Navigation */
+
+
+/* Section Contact */
+
+/* Formulaire */
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Center the form horizontally */
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+}
+
+.form-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(6, 72, 27);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: rgb(6, 72, 27);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+      width: 90%; /* Wider on small screens */
+  }
+
+  .form-group {
+      min-width: 100%;
+  }
+
+  #contact {
+      padding: 60px 20px; /* Added horizontal padding */
+  }
+}
+
+/* Additional styling for submit button if needed */
+.submit-btn {
+  background-color: rgb(6, 72, 27);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #045020;
 }
