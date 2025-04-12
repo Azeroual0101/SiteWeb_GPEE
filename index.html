@@ -3,20 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Événement Spécial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-        publicKey: "I78DEPTkk2DWDmAjo",
-        });
-    })();
-</script>
 </head>
 <body>
     <!-- Header avec Navigation -->
@@ -241,50 +232,48 @@
     </div>
 </section>
     <!-- Section Compétition -->
-    <section id="competition">
+<section id="competition">
+    <div class="container">
+        <h2 class="fade-in">La Compétition</h2>
 
-        <div class="container">
-            <h2 class="fade-in">La Compétition</h2>
-
-            <div class="competition-content">
-                <div class="competition-carousel">
-                    <div class="competition-poster" style="margin-left: 100px;">
-                        <img src="imagesComp/afficheComp1.jpg" alt="Affiche de la compétition 1" class="active" style="width: 100%; max-width: 300px;">
-                    </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsIFD2WaNAm75gMBE0_lCDD8gVH1S_R8FFwTpNVtAJTz8QXA/viewform" class="btn" style="font-size: 1em; padding: 5px; display: flex; justify-content: center; align-items: center; width: 150px; margin: 0px auto 0px 200px;">Inscrivez-vous</a>
-                
+        <div class="competition-content">
+            <!-- Carousel -->
+            <div class="competition-carousel">
+                <div class="competition-poster">
+                    <img src="imagesComp/afficheComp1.jpg" alt="Affiche de la compétition" class="active">
                 </div>
-                <div class="competition-promo">
-                    <br>
-                    <p class="promo-heading">🌱💡 Rejoignez <strong>Green Tech 11.0 </strong>et faites la différence ! 💡🌱</p>
-                    <p class="promo-subtitle">Vous avez une idée innovante pour un avenir plus vert ? C'est le moment de la concrétiser ! 🌍✨</p>
-                    <p class="promo-subtitle">Ne manquez pas cette occasion de contribuer à un monde meilleur !<br> 💪♻ Inscrivez-vous et partagez avec votre réseau !
-                    </p>
-                    
-                    
-                    <br>
-                    <div class="participation-reasons">
-                        <h3 class="reasons-title">🚀 <strong>Pourquoi participer ?</strong></h3>
 
-                            <pre>🔹 Transformez votre idée en un projet concret et impactant</pre>
-                            <pre>🔹 Bénéficiez de l'accompagnement d'experts et développez vos compétences</pre>
-                            <pre>🔹 Gagnez en visibilité et en reconnaissance dans le secteur des énergies renouvelables</pre>
-                            <pre>🔹 Accédez à des opportunités uniques et boostez votre visibilité</pre>
-                        <br>
-                        <h3 class="info-cta">
-                            <a href="ContactezNous.html" class="modern-link" style="color: #318c58;">
-                                Plus d'informations cliquez ici 
-                                
-                            </a>
-                        </h3>
-                        
-                    </div>
+             
+            </div>
+
+            <!-- Contenu promotionnel -->
+            <div class="competition-promo">
+                <br><br>
+                <p class="promo-heading">Rejoignez <strong>Green Tech 11.0</strong> </p>
+                <p class="promo-subtitle">Vous avez une idée innovante pour un avenir plus vert ?<br>C'est le moment de la concrétiser ! 🌍✨</p>
+                <p class="promo-subtitle">Ne manquez pas cette occasion de contribuer à un monde meilleur !</p>
+
+                <div class="participation-reasons">
+                    <h3 class="reasons-title">🚀 Pourquoi participer ?</h3>
+                    <ul class="reasons-list">
+                        <li>Transformez votre idée en projet concret</li>
+                        <li>Accompagnement par des experts</li>
+                        <li>Visibilité dans le secteur des énergies renouvelables</li>
+                        <li>Opportunités uniques de développement</li>
+                    </ul>
+
+                    <a href="#contact" class="info-cta modern-link"
+                    class="info-cta modern-link"  
+                    style="margin-left: 50px; color: #3CB371; font-weight: bold;">
+                    <br><br>
+                                  <strong style="display: block; text-align: center;">Plus d'informations</strong>
+                 </a>
+                 
                 </div>
             </div>
-           
-
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact">
         <div class="container">
