@@ -83,6 +83,32 @@ nav {
   cursor: pointer;
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Affiche le hamburger sur mobile */
+  }
+  
+  .nav-links {
+    display: none; /* Cache les liens par défaut */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(51, 51, 51, 0.5); /* Transparence avec rgba (ajustez selon votre --primary-color) */
+    backdrop-filter: blur(10px); /* Ajoute un flou à l'arrière-plan */
+    -webkit-backdrop-filter: blur(10px); /* Support pour certains navigateurs comme Safari */
+}
+  
+  .nav-links.active {
+    display: flex; /* Affiche les liens quand le menu est ouvert */
+  }
+  
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
 
 section {
   padding: 6rem 0;
@@ -91,13 +117,14 @@ section {
   align-items: center;
 }
 
+/* Base styles */
 h1, h2, h3, h4 {
   margin-bottom: 1.5rem;
   color: var(--primary-color);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Default for desktop */
   text-align: center;
   position: relative;
   padding-bottom: 1rem;
@@ -116,6 +143,65 @@ h2::after {
 
 p {
   margin-bottom: 1.5rem;
+  font-size: 1rem; /* Default for desktop */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Reduced size for mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reduced size for mobile */
+    padding-bottom: 0.8rem;
+  }
+
+  h2::after {
+    width: 80px; /* Slightly smaller underline for mobile */
+    height: 2px; /* Thinner line for mobile */
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller for mobile */
+  }
+}
+
+/* Optional: Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+  }
+
+  h2::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
 }
 
 .btn {

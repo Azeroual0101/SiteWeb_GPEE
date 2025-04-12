@@ -526,6 +526,3 @@ document.addEventListener('DOMContentLoaded', function() {
         startForumSlideshow();
     }
 });
-
-
-  
